@@ -1,0 +1,843 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chewy';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: #45143c;
+    background-color: #ffffff;
+}
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/A.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+.logo {
+    width: 180px; 
+    height: auto; 
+    border-radius: 100%; 
+    position: absolute; 
+    top: 20px; 
+    right: 96%; 
+}
+
+
+.container {
+    padding: 10px 10%;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 50px;
+}
+nav ul li a {
+    color: #642557;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #45143c;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.header-img {
+    width: 70%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px; 
+}
+.header-img img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------------intro-------------------- */
+#Intro {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('Images/E.png'); /* Replace with your background image */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.container {
+    max-width: 1200px; /* Limits the width of the content */
+    width: 100%;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between the two columns */
+}
+.Intro-col-1 {
+    flex-basis: 35%;
+    position: relative; /* Allows adjustments using margins */
+    margin-top: -100px; /* Moves the image closer to the top edge */
+    margin-left: -100px; /* Moves the image closer to the left edge */
+}
+
+.Intro-col-1 img {
+    width: 120%; /* Slightly larger image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+.Intro-col-2 {
+    flex-basis: 40%;
+}
+
+.Intro-col-2 img {
+    width: 130%; /* Makes the images responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;  /* Optional: adds rounded corners to images */
+    
+}
+
+/* ---------------about-------------------- */
+#About {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('Images/3back.png'); /* Replace with your background image */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.container {
+    max-width: 1200px; /* Limits the width of the content */
+    width: 100%;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between the two columns */
+}
+.About-col-1 {
+    flex-basis: 40%;
+    position: relative; /* Allows adjustments using margins */
+    margin-top: 50px; /* Moves the image closer to the top edge */
+    margin-left: -100px; /* Moves the image closer to the left edge */
+}
+
+.About-col-1 img {
+    width: 120%; /* Slightly larger image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+.About-col-2 {
+    flex-basis: 40%;
+}
+
+.About-col-2 img {
+    width: 130%; /* Makes the images responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;  /* Optional: adds rounded corners to images */
+    
+}
+
+/* ---------------edu-------------------- */
+#Education {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('Images/4back.png'); /* Replace with your background image */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.container {
+    max-width: 1200px; /* Limits the width of the content */
+    width: 100%;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between the two columns */
+}
+/* Adjusts the positioning of the first column to move the image lower */
+.Education-col-1 {
+    flex-basis: 40%;
+    position: relative; /* Allows adjustments using margins */
+    margin-top: 150px; /* Moves the image further down the page */
+    margin-left: -100px; /* Keeps the image closer to the left edge */
+}
+
+.Education-col-1 img {
+    width: 120%; /* Slightly larger image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+/* Adjusts the second column for alignment and spacing */
+.Education-col-2 {
+    flex-basis: 40%;
+}
+
+/* Styling the container for tab titles with more line spacing */
+.tab-titles {
+    margin: 20px 0 40px;
+    line-height: 2.8; /* Adds more line spacing for readability */
+    text-align: center;
+    list-style-type: none; /* Removes bullet points for a cleaner look */
+}
+
+/* Styling for each link with additional line spacing */
+.tab-links {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000000;
+    position: relative;
+    margin-bottom: 30px; /* Adds more space between each link */
+    display: block; /* Ensures links are displayed as separate lines */
+}
+
+/* Hidden by default; will show under each link when activated */
+.tab-contents {
+    display: none; /* Content hidden initially */
+    font-size: 25px;
+    color: #3e323e;
+    margin-top: -20px; /* Adjusts the position to display in line with each link */
+    padding-left: 20px;
+}
+
+/* Styling for the list inside each content section */
+.tab-contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tab-contents ul li {
+    margin: 10px 0;
+}
+
+/* Emphasizing span within each content item */
+.tab-contents ul li span {
+    color: #010001;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*--------------skills--------------------*/
+/* Skills Section with Background Image */
+/* Skills Section with Background Image */
+#skills {
+    background-image: url("Images/skillsback.png");
+    background-size: cover;  /* Ensures the background image covers the entire window */
+    background-position: center;
+    height: 100vh;  /* Takes up the full height of the window */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Personal Skills Title positioned only on this page */
+.sub-title {
+    font-size: 80px; /* Increase font size */
+    color: #811892;
+    position: absolute;
+    left: 30px;
+    margin: 0;
+    font-weight: 700;
+    z-index: 1;
+}
+
+/* Skills Grid Layout */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px; /* Space between skill items */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 100px;
+    justify-items: center; /* Centers the items within each column */
+}
+
+/* Individual Skill Items with Background Color and Transition */
+.skill-item {
+    background-color: #f5f5f5; /* Set a background color for skill items */
+    padding: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    max-width: 280px;
+    text-align: left;
+    transition: background 0.5s, transform 0.5s;
+}
+
+/* Hover Effect for Skill Items */
+.skill-item:hover {
+    background-color: #b94dc3; /* New background color on hover */
+    color: #fff; /* Text color change on hover */
+    transform: translateY(-10px); /* Lift the item slightly on hover */
+}
+
+/* Ensure Text and Icons Remain Visible on Hover */
+.skill-item:hover h2, .skill-item:hover p, .skill-item:hover a {
+    color: #fff;
+}
+
+/* FontAwesome Icon Styling */
+.skill-item i {
+    font-size: 90px; /* Increased icon size */
+    color: #7f2a91;
+    margin-bottom: 30px;
+    transition: color 0.5s; /* Smooth transition for icon color */
+}
+
+/* Change Icon Color on Hover */
+.skill-item:hover i {
+    color: #fff; /* Icon color change on hover */
+}
+
+/* Skill Title */
+.skill-item h2 {
+    font-size: 37px; /* Slightly larger title font */
+    color: #872099;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Skill Description */
+.skill-item p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Learn More Link */
+.skill-item a {
+    color: #a948d2;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 20px;
+}
+ 
+/*---------- Portfolio Section ----------*/
+#portfolio {
+    background-image: url("Images/workbackk.png"); /* Add background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Ensures the section takes up the full viewport height */
+}
+
+/* Portfolio Title */
+#portfolio h1 {
+    font-size: 90px;
+    color: #6c0d81;
+    margin: 0;
+    font-weight: 700;
+    position: absolute;
+    left: 30px;
+    z-index: 1;
+}
+
+/* Work List Layout */
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted to allow larger images */
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 100px;
+    justify-items: center; /* Center-aligns each work item within the grid */
+}
+
+/* Individual Work Item Styling */
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%; /* Make sure it expands to its container width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    transition: transform 0.3s;
+}
+
+.work:hover {
+    transform: scale(1.05); /* Scale up slightly on hover for effect */
+}
+
+/* Work Item Image */
+.work img {
+    width: 100%;         /* Make the image fill its container */
+    height: auto;        /* Keep the original aspect ratio */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+/* Layer Styling (Background with text) */
+.layer {
+    width: 100%;
+    height: 0; /* Initially hidden (height 0) */
+    background: linear-gradient(rgba(64, 9, 75, 0.6),#a948d2);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s ease-in-out; /* Transition for height */
+}
+
+/* Layer Text */
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #eabdf1;
+}
+.layer p{
+    color: #df9bea;
+}
+
+/* Learn More Button */
+.layer a {
+    margin-top: 20px;
+    color: #511b51;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #eabdf1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Hover Effects */
+.work:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+.work:hover .layer {
+    height: 100%; /* Expand layer to full height */
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #560969;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #b15bcb;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #511a5a;
+}
+
+/* Background Image for the Page */
+body {
+    background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*------------- Contact Section ------------------*/
+.contact-section {
+    background-image: url("Images/lastback.png");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: left;
+    position: relative;
+}
+
+/* Title Styling */
+.contact-section .sub-title {
+    font-size: 3em;
+    color: #451443;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Container for Left and Right Columns */
+.contact-content {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+/* Left Column - Contact Details and Icons */
+.contact-left {
+    flex-basis: 40%;
+    background: rgba(235, 183, 239, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #2c192c;
+}
+
+.contact-left p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.contact-left p i {
+    color: #451443;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.7em;
+    margin-right: 15px;
+    color: #230927;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #8307ac;
+    transform: translateY(-3px);
+}
+
+/* Download Button */
+.contact-left .btn2 {
+    display: inline-block;
+    background: #451443;
+    color: #e0c9e2;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-left .btn2:hover {
+    background: #76089a;
+}
+
+/* Right Column - Contact Form */
+.contact-right {
+    flex-basis: 55%;
+    padding: 20px;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #eabdf1;
+    padding: 15px;
+    margin: 15px 0;
+    color: #230927;
+    font-size: 1.1em;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 12px 50px;
+    font-size: 1.1em;
+    background: #451443;
+    color: #e0c9e2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .btn2:hover {
+    background: #76089a;
+}
+
+/* Bottom-Aligned Copyright Section */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #a948d2;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+}
+
+.copyright p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.copyright i {
+    color: #ff66b2; /* Rose-red color */
+    margin-left: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+/*------------------------css for small screens------------------------*/
+nav.fas{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .Intro-col-1, .Intro-col-2, 
+    .About-col-1, .About-col-2, 
+    .Education-col-1, .Education-col-2 {
+        flex: 1 1 100%;
+    }
+    .Education-col-2.tab-titles{
+        align-items: center;
+        font-size: 15ppx;
+    }
+    .Education-col-2.tab-contents{
+        align-items: center;
+        font-size: 20px;
+    }
+
+    #header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .logo{
+        margin-top: 10px;
+        align-items: left;
+    }
+    .header-img{
+        align-items: center;
+    }
+
+    #sidemenu.open {
+        display: flex;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-list {
+        flex-direction: column;
+    }
+
+    .work {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(Images/phoneback1.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+        align-items: center;
+    }
+    .header-text h1{
+        font-size: 30px;
+        align-items: center;
+    }
+    nav.fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #c989d7;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul.fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .About-col-1,.About-col-2{
+        flex-basis: 100%;
+    }
+    .About-col-1{
+        margin-bottom: 30px;
+    }
+    .About-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .contact-left, .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        padding: 20px 0;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#msg {
+    color: #560969;
+    margin-top: 10px; /* Add space between the button and message */
+    display: block;
+    text-align: center; /* Center-align the message */
+    font-size: 14px; /* Optional: Adjust font size */
+}
+
+
+
+
+

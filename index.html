@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cae52c604b.js" crossorigin="anonymous"></script>
+</head>
+<body><body id="home">
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/ONlogo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#Intro">Introduction</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Work</a></li> 
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-img">
+            <img src="Images/B_transparent.png" alt="Header Image">
+        </div>
+    </div>
+</div>
+<!-- -------------intro------------ -->
+<div id="Intro">
+    <div class="container">
+        <div class="row">
+            <div class="Intro-col-1">
+                <img src="Images/C1.PNG" alt="Image 1">
+            </div>
+            <div class="Intro-col-2">
+                <img src="Images/D.png" alt="Image 2">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------about--------- -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="Images/aboutme.png" alt="Image 1">
+            </div>
+            <div class="About-col-2">
+                <img src="Images/aboutphoto11.PNG" alt="Image 2">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------edu------------ -->
+<div id="Education">
+    <div class="container">
+        <div class="row">
+            <div class="Education-col-1">
+                <img src="Images/edu.png" alt="Image 1">
+            </div>
+            <div class="Education-col-2">
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('school')">2010 - R/Kalawana National School</p>
+                    <div class="tab-contents" id="school">
+                        <ul>
+                            <li><span>2020 - O/L</span><br>Showed talents in difficult subjects like English Literature, ICT, Mathematics</li>
+                            <li><span>2023 - A/L</span><br>Studied Mathematics, Physics, and ICT with good results</li>
+                        </ul>
+                    </div>
+            
+                    <p class="tab-links" onclick="opentab('campus')">2023 - University of Moratuwa</p>
+                    <div class="tab-contents" id="campus">
+                        <ul>
+                            <li><span>English Executive Certificate Course</span><br>Learned and practiced how to use English effectively in business and social settings</li>
+                        </ul>
+                    </div>
+            
+                    <p class="tab-links" onclick="opentab('university')">2024 - Sri Lanka Technological Campus</p>
+                    <div class="tab-contents" id="university">
+                        <ul>
+                            <li><span>SLTC Research University</span><br>Currently studying software engineering and understanding the importance of technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- --------skills--------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Personal Skills</h1>
+        <div class="skills-list">
+            <div class="skill-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Analytical Thinking</h2>
+                <p>I enjoy diving into complex challenges and breaking them down into manageable solutions. My analytical mindset allows me to assess situations logically and make data-driven decisions, enabling me to tackle problems effectively and creatively.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-people-group"></i>
+                <h2>Team Collaboration</h2>
+                <p>Working with others towards shared goals is something I value deeply. I’m dedicated to creating a supportive, respectful team environment where everyone’s strengths shine, and collaboration leads to achieving the best results.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-comments"></i>
+                <h2>Effective Communication</h2>
+                <p>I believe that clear, open communication is key to successful collaboration. Whether explaining technical concepts or sharing project updates, I strive to communicate effectively with team members and stakeholders, fostering understanding and alignment.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-face-smile"></i>
+                <h2>Adaptability</h2>
+                <p>In the ever-evolving tech landscape, adaptability is essential. I embrace change and am quick to learn new tools, technologies, or approaches, allowing me to stay agile and responsive in dynamic environments.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------portfolio------------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/project.jpg">
+                <div class="layer">
+                    <h3>Projects</h3>
+                    <p>As a member of the coordination team for
+                        IEEE SLTC's Decode Xtreme, I played a key
+                        role in assisting with event planning,
+                        logistics, and team collaboration. My
+                        responsibilities helped ensure the smooth
+                        execution of this prominent event, where
+                        I gained valuable experience in
+                        organization and teamwork.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/teach.jpg">
+                <div class="layer">
+                    <h3>Social Services</h3>
+                    <p>As part of the Leo Club's DreamIgnite
+                        project, I had the opportunity to teach
+                        children English and ICT in schools, helping
+                        them build essential skills and knowledge.
+                        This experience not only allowed me to
+                        contribute to the community but also
+                        helped me enhance my communication
+                        and teaching abilities, making a positive
+                        impact on the students' learning journeys.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+<!--------------------------- Contact Section ------------------->
+<div id="contact" class="contact-section">
+    <h1 class="sub-title">Let's work together</h1>
+    
+    <!-- Container for Left and Right Columns -->
+    <div class="contact-content">
+        <!-- Left Column: Contact Details, Icons, Download Button -->
+        <div class="contact-left">
+            <p><i class="fa-solid fa-envelope"></i> omayanayagara@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 0701811151</p>
+            <div class="social-icons">
+                <a href="http://www.linkedin.com/in/omaya-nayagara-980a9527a" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/omayanayagara/profilecard/?igsh=bWcyeG42cjVhbnp6" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61565382845654&mibextid=LQQJ4d" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+            <a href="Images/Omaya_Nayagara_CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <!-- Right Column: Contact Form -->
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                <span id="msg"></span> <!-- Message will be displayed here -->
+            </form>
+        </div>        
+    </div>
+    
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright © Omaya Nayagara. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+<script>
+
+    function opentab(tabname) {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+            
+        // Remove active-link from all links and hide all contents
+            for (let tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                        tabcontent.style.display = "none";
+            }
+            
+        // Show only the content of the clicked link
+            document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+            document.getElementById(tabname).style.display = "block";
+    }
+</script>
+
+<script>
+
+function openmenu() {
+    var sidemenu = document.getElementById("sidemenu");
+    sidemenu.classList.add("open");
+}
+
+function closemenu() {
+    var sidemenu = document.getElementById("sidemenu");
+    sidemenu.classList.remove("open");
+}
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzvwjI2AWhWvNzCX6s4eCWfKQwlo3BJFj2nzaK0oZrR3pKbb_n2lBJrzmqMwoe3nVm_2A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Massage sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent actual form submission
+    document.getElementById('msg').innerText = "Your message has been sent!"; // Display the message
+})
+</script>
+                      
+            
+
+</body>
+</html>
